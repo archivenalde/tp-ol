@@ -1,0 +1,307 @@
+
+Log started (V12.5.1.0) Tue Oct  9 16:25:19 2018
+
+CPLEX Error  1609: Line 7: Expected identifier first.
+No file read.
+CPLEX Error  1434: Line 6: Couldn't convert '+264e4+' to a number.
+No file read.
+CPLEX Error  1434: Line 2: Couldn't convert '+264e4+87' to a number.
+No file read.
+
+Problem 'tp4.lp' read.
+Read time = 0.03 sec. (0.00 ticks)
+
+Problem 'tp4.lp' read.
+Read time = 0.00 sec. (0.00 ticks)
+Dual infeasible due to empty column 'a4'.
+Presolve time = 0.00 sec. (0.00 ticks)
+Presolve - Unbounded or infeasible.
+Solution time =    0.01 sec.
+Deterministic time = 0.00 ticks  (0.18 ticks/sec)
+CPLEX Error  1436: Max or Min missing.
+No file read.
+
+Problem 'tp4.lp' read.
+Read time = 0.00 sec. (0.00 ticks)
+Dual infeasible due to empty column 'g4'.
+Presolve time = 0.00 sec. (0.00 ticks)
+Presolve - Unbounded or infeasible.
+Solution time =    0.00 sec.
+Deterministic time = 0.00 ticks  (2.92 ticks/sec)
+
+Problem 'tp4.lp' read.
+Read time = 0.00 sec. (0.00 ticks)
+Tried aggregator 1 time.
+LP Presolve eliminated 7 rows and 9 columns.
+Aggregator did 3 substitutions.
+Reduced LP has 6 rows, 12 columns, and 26 nonzeros.
+Presolve time = 0.00 sec. (0.02 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =       2179526.000000
+
+Dual simplex - Optimal:  Objective =  1.8833830000e+06
+Solution time =    0.04 sec.  Iterations = 10 (0)
+Deterministic time = 0.04 ticks  (0.87 ticks/sec)
+
+
+Variable Name           Solution Value
+a3                          410.750000
+a4                         2343.250000
+b1A                         720.000000
+b3                          130.000000
+c1A                         685.000000
+c3                          170.000000
+d1A                         901.250000
+d4                          696.750000
+g1A                         222.000000
+g4                          183.000000
+f1A                        1761.000000
+All other variables in the range 1-24 are 0.
+
+Problem 'tp4.lp' read.
+Read time = 0.00 sec. (0.00 ticks)
+Tried aggregator 1 time.
+LP Presolve eliminated 7 rows and 9 columns.
+Aggregator did 3 substitutions.
+Reduced LP has 6 rows, 12 columns, and 26 nonzeros.
+Presolve time = 0.00 sec. (0.02 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =       2179526.000000
+
+Dual simplex - Optimal:  Objective =  1.8833830000e+06
+Solution time =    0.00 sec.  Iterations = 10 (0)
+Deterministic time = 0.04 ticks  (32.66 ticks/sec)
+
+
+Problem 'tp4.lp' read.
+Read time = 0.00 sec. (0.00 ticks)
+
+Problem 'tp4.lp' read.
+Read time = 0.00 sec. (0.00 ticks)
+Tried aggregator 1 time.
+LP Presolve eliminated 7 rows and 9 columns.
+Aggregator did 3 substitutions.
+Reduced LP has 6 rows, 12 columns, and 26 nonzeros.
+Presolve time = 0.00 sec. (0.02 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =       2179526.000000
+
+Dual simplex - Optimal:  Objective =  1.8833830000e+06
+Solution time =    0.00 sec.  Iterations = 10 (0)
+Deterministic time = 0.04 ticks  (37.30 ticks/sec)
+
+
+Problem 'tp4_modifie.lp' read.
+Read time = 0.01 sec. (0.00 ticks)
+Tried aggregator 1 time.
+LP Presolve eliminated 7 rows and 3 columns.
+Reduced LP has 10 rows, 21 columns, and 55 nonzeros.
+Presolve time = 0.00 sec. (0.02 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =       2179526.000000
+
+Dual simplex - Optimal:  Objective =  1.8473830000e+06
+Solution time =    0.00 sec.  Iterations = 8 (0)
+Deterministic time = 0.04 ticks  (38.84 ticks/sec)
+
+
+Variable Name           Solution Value
+a3                          410.750000
+a4                         2343.250000
+b1A                         720.000000
+b3                          130.000000
+c1A                         685.000000
+c3                          170.000000
+d1A                         901.250000
+d4                          696.750000
+g1A                         222.000000
+g4                          183.000000
+f1A                        1261.000000
+f1B                         500.000000
+All other variables in the range 1-24 are 0.
+
+Problem 'tp4_modifie_bis.lp' read.
+Read time = 0.01 sec. (0.00 ticks)
+Tried aggregator 1 time.
+LP Presolve eliminated 7 rows and 9 columns.
+Aggregator did 3 substitutions.
+Reduced LP has 6 rows, 12 columns, and 26 nonzeros.
+Presolve time = 0.00 sec. (0.02 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =       2192728.000000
+
+Dual simplex - Optimal:  Objective =  1.8927670000e+06
+Solution time =    0.00 sec.  Iterations = 10 (0)
+Deterministic time = 0.04 ticks  (26.74 ticks/sec)
+
+
+Problem 'tp4_modifie_bis.lp' read.
+Read time = 0.00 sec. (0.00 ticks)
+Tried aggregator 1 time.
+LP Presolve eliminated 7 rows and 9 columns.
+Aggregator did 3 substitutions.
+Reduced LP has 6 rows, 12 columns, and 26 nonzeros.
+Presolve time = 0.00 sec. (0.02 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =       2218052.000000
+
+Dual simplex - Optimal:  Objective =  1.9120590000e+06
+Solution time =    0.00 sec.  Iterations = 10 (0)
+Deterministic time = 0.04 ticks  (37.30 ticks/sec)
+
+
+Problem 'tp4_modifie_bis.lp' read.
+Read time = 0.00 sec. (0.00 ticks)
+Tried aggregator 1 time.
+LP Presolve eliminated 7 rows and 9 columns.
+Aggregator did 3 substitutions.
+Reduced LP has 6 rows, 12 columns, and 26 nonzeros.
+Presolve time = 0.00 sec. (0.02 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =       2199517.000000
+
+Dual simplex - Optimal:  Objective =  1.8975390000e+06
+Solution time =    0.00 sec.  Iterations = 10 (0)
+Deterministic time = 0.04 ticks  (29.74 ticks/sec)
+
+
+Variable Name           Solution Value
+a3                          410.750000
+a4                         2389.250000
+b1A                         720.000000
+b3                          130.000000
+c1A                         685.000000
+c3                          170.000000
+d1A                         901.250000
+d4                          748.750000
+g1A                         222.000000
+g4                          128.000000
+f1A                        1761.000000
+All other variables in the range 1-24 are 0.
+
+Problem 'tp4_modifie_bis.lp' read.
+Read time = 0.00 sec. (0.00 ticks)
+Tried aggregator 1 time.
+LP Presolve eliminated 7 rows and 9 columns.
+Aggregator did 3 substitutions.
+Reduced LP has 6 rows, 12 columns, and 26 nonzeros.
+Presolve time = 0.00 sec. (0.02 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =       2194210.000000
+
+Dual simplex - Optimal:  Objective =  1.8922960000e+06
+Solution time =    0.00 sec.  Iterations = 10 (0)
+Deterministic time = 0.04 ticks  (37.14 ticks/sec)
+
+
+Problem 'tp4_modifie_bis.lp' read.
+Read time = 0.00 sec. (0.00 ticks)
+Tried aggregator 1 time.
+LP Presolve eliminated 7 rows and 9 columns.
+Aggregator did 3 substitutions.
+Reduced LP has 6 rows, 12 columns, and 26 nonzeros.
+Presolve time = 0.00 sec. (0.02 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =       2211060.000000
+
+Dual simplex - Optimal:  Objective =  1.9055133333e+06
+Solution time =    0.00 sec.  Iterations = 10 (0)
+Deterministic time = 0.04 ticks  (25.76 ticks/sec)
+
+
+Variable Name           Solution Value
+a3                          410.750000
+a4                         2389.250000
+b1A                         720.000000
+b3                          130.000000
+c1A                         685.000000
+c3                          170.000000
+d1A                         799.583333
+d4                          850.416667
+g1A                         384.666667
+g4                           15.333333
+f1A                        1700.000000
+All other variables in the range 1-24 are 0.
+
+Problem 'tp4_modifie_bis.lp' read.
+Read time = 0.00 sec. (0.00 ticks)
+Tried aggregator 1 time.
+LP Presolve eliminated 7 rows and 9 columns.
+Aggregator did 3 substitutions.
+Reduced LP has 6 rows, 12 columns, and 26 nonzeros.
+Presolve time = 0.00 sec. (0.02 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =       2211060.000000
+
+Dual simplex - Optimal:  Objective =  1.9174595833e+06
+Solution time =    0.00 sec.  Iterations = 8 (0)
+Deterministic time = 0.04 ticks  (35.77 ticks/sec)
+
+
+Problem 'tp4_modifie_bis.lp' read.
+Read time = 0.00 sec. (0.00 ticks)
+Tried aggregator 1 time.
+LP Presolve eliminated 7 rows and 9 columns.
+Aggregator did 3 substitutions.
+Reduced LP has 6 rows, 12 columns, and 26 nonzeros.
+Presolve time = 0.00 sec. (0.02 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =       2211060.000000
+
+Dual simplex - Optimal:  Objective =  1.9174595833e+06
+Solution time =    0.00 sec.  Iterations = 8 (0)
+Deterministic time = 0.04 ticks  (35.77 ticks/sec)
+
+
+Variable Name           Solution Value
+a3                          410.750000
+a4                         2389.250000
+b1A                         720.000000
+b3                          130.000000
+c1A                         685.000000
+c3                          170.000000
+d1A                         799.583333
+d4                          850.416667
+g1A                         384.666667
+g4                           15.333333
+f1A                        1700.000000
+All other variables in the range 1-24 are 0.
+
+Problem 'tp4_modifie_bis.lp' read.
+Read time = 0.00 sec. (0.00 ticks)
+Tried aggregator 1 time.
+LP Presolve eliminated 7 rows and 9 columns.
+Aggregator did 3 substitutions.
+Reduced LP has 6 rows, 12 columns, and 26 nonzeros.
+Presolve time = 0.00 sec. (0.02 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =       2211060.000000
+
+Dual simplex - Optimal:  Objective =  1.9055133333e+06
+Solution time =    0.00 sec.  Iterations = 10 (0)
+Deterministic time = 0.04 ticks  (37.30 ticks/sec)
+
