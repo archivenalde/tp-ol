@@ -61,6 +61,7 @@ int readRes(Resolution* r, const char* fileName)
 
     statut = CPXreadcopyprob(r->env, r->lp, fileName, NULL);
     ERREUR_STATUT("readRes")
+      printf("Statut = %d\n", statut);
 
     return statut;
 }
@@ -255,7 +256,7 @@ int main(int argc, char const *argv[])
     // instanciation d’un PL
     //statut = readRes(r, "p3.lp");
 
-    statut = startANDreadRes(r, "probleme", "p3.lp");
+    statut = startANDreadRes(r, "probleme", "exo4.lp");
 
     // resolution d’un PL
     if (argc > 1)
