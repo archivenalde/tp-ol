@@ -5,11 +5,17 @@
 
 #include <cplex.h>
 
+
+#define VARSTR "variables"
+#define DUALSTR "solution optimales"
+#define OBJSTR "solution objectif"
+#define SLACKSTR "variables ecarts"
+#define REDUCECOSTSSTR "couts reduits"
+
 #define ERREUR_CREATION_RES(fct) \
 	if (r == NULL) \
     { \
     	printf("La structure de resolution n'est pas créée (%s).\n", fct);\
-    	return -1;\
     }
 
 #define ERREUR_STATUT(fct) \
@@ -91,10 +97,10 @@ int solRes(Resolution* r)
     r->numRows = CPXgetnumrows(r->env, r->lp);
     r->numCols = CPXgetnumcols(r->env, r->lp);
 
-    r->var = realloc(sizeof(double) * r->numCols);
-    r->dual = realloc(sizeof(double) * r->numRows);
-    r->slack = realloc(sizeof(double) * r->numRows);
-    r->reduceCosts = realloc(sizeof(double) * r->numCols);
+    r->var = realloc(r->var, sizeof(double) * r->numCols);
+    r->dual = realloc(r->dual, sizeof(double) * r->numRows);
+    r->slack = realloc(r->slack, sizeof(double) * r->numRows);
+    r->reduceCosts = realloc(r->reduceCosts, sizeof(double) * r->numCols);
     statut = CPXsolution(r->env, r->lp, &r->optResult, &r->obj, r->var, r->dual, r->slack, r->reduceCosts);
 
     return statut;
@@ -179,22 +185,24 @@ void afficherRes(Resolution* r, ...)
 	const char* fctstr;
 
 	va_start(va, r);
-
-	do {
-		fctstr = va_arg(va, const char);
-		if (strcmp(fctstr, "variables"))
+	fctstr = va_arg(va, const char*);
+	
+	while (fctstr != NULL)
+	  {
+		if (strcmp(fctstr, VARSTR) == 0)
 			afficherVariablesRes(r);
-		else if (strcmp(fctstr, "solution optimales") == 0)
+		else if (strcmp(fctstr, OBJSTR) == 0)
 			afficherSolutionOptimaleRes(r);
-		else if (strcmp(fctstr, "dual variables") == 0)
+		else if (strcmp(fctstr, DUALSTR) == 0)
 			afficherDualVariablesRes(r);
-		else if (strcmp(fctstr, "variables ecarts") == 0)
+		else if (strcmp(fctstr, SLACKSTR) == 0)
 			afficherVariablesEcartsRes(r);
-		else if (strcmp(fctstr, "couts reduits") == 0)
+		else if (strcmp(fctstr, REDUCECOSTSSTR) == 0)
 			afficherCoutsReduitsRes(r);
 		else if (fctstr != NULL)
 			printf("Pas d'affichages correspondant a : %s.\n", fctstr);
-	} while (fctstr != NULL)
+		fctstr = va_arg(va, const char*);
+	}
 
 	va_end(va);
 }
@@ -250,17 +258,22 @@ int main(int argc, char const *argv[])
     statut = startANDreadRes(r, "probleme", "p3.lp");
 
     // resolution d’un PL
-    if (strcmp(argv[1], "primal"))
-    	statut = optRes(r, CPXprimopt);
-    else if (strcmp(argv[1], "dual"))
-    	statut = optRes(r, CPXdualopt);
+    if (argc > 1)
+      {
+	if (strcmp(argv[1], "primal"))
+	  statut = optRes(r, CPXprimopt);
+	else if (strcmp(argv[1], "dual"))
+	  statut = optRes(r, CPXdualopt);
+	else
+	  statut = optRes(r, CPXlpopt);
+      }
     else
-    	statut = optRes(r, CPXlpopt);
-
+      statut = optRes(r, CPXlpopt);
+    
     //Recuperation de la solution
     statut = solRes(r);
 
-    afficherVariablesRes(r);
+    afficherRes(r, VARSTR, OBJSTR, SLACKSTR, NULL);
     // sauvegarde de la solution dans un fichier
     //statut = CPXsolwrite(env, lp, "resolution.txt");
 
