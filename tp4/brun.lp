@@ -1,5 +1,5 @@
 Maximize
- obj: 20x + 22.5 y + 19 z
+ obj: 2x + 0.6 y + 1.75 z
 Subject To
  c1: x <= 800 000
  c2: y <= 50 000
