@@ -1,5 +1,5 @@
 Maximize
- obj: 2xe + 0.6 xj + 1.75 xs
+ obj: -0.05xe + 0.4 xj + 2.75 xs
 Subject To
  c1: xe <= 800 000
  c2: xj <= 50 000
